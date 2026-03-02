@@ -1681,6 +1681,49 @@ section,
   font-size: 15px;
   margin-bottom: 10px;
 }
+.whatsapp-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+#scroll-top {
+  position: fixed;       /* debe estar fijo */
+  bottom: 20px;          /* distancia al borde inferior */
+  right: 20px;           /* distancia al borde derecho */
+  z-index: 1000;         /* para que esté encima de contenido normal */
+  width: 60px;           /* si no tiene tamaño fijo, ajusta aquí */
+  height: 60px;
+  /* otros estilos de botón */
+}
+#whatsapp-float {
+  position: fixed !important;
+  bottom: 90px !important;   /* 20px (botón amarillo) + 60px (alto botón) + 10px (espacio) */
+  right: 20px !important;
+  z-index: 1100 !important; /* más alto que el botón amarillo */
+}
+
+#whatsapp-float a {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 60px !important;
+  height: 60px !important;
+  background-color: #25D366 !important;
+  border-radius: 50% !important;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4) !important;
+  text-decoration: none !important;
+  transition: transform 0.3s ease !important;
+}
+
+#whatsapp-float a:hover {
+  transform: scale(1.2) !important;
+}
+
+#whatsapp-float a img {
+  width: 35px !important;
+  height: 35px !important;
+}
 
 /*--------------------------------------------------------------
 # Starter Section Section
